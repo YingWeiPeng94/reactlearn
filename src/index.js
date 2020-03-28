@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css"
-
-const content = "<h1>sdasd</h1><p>wedasd3</p>";
-const div = (
-    <div dangerouslySetInnerHTML={{
-        __html:content
-    }}>
-    
-      
-    </div>
-    
-);
-// // 相当于
-// const divs = React.createElement("div",{},`${a}*${b}=${a*b}`)
-ReactDOM.render(div, document.getElementById('root'));
+import CheckBoxGroup from "./components/common/CheckBoxGroup/Test"
+import RadioBoxGroup from "./components/common/RadioBoxGroup/Test"
+import Select from "./components/common/Select/Test"
+ReactDOM.render(<div>
+    <CheckBoxGroup></CheckBoxGroup>
+    <hr/>
+    <RadioBoxGroup></RadioBoxGroup>
+    <hr/>
+    <Select>
+        
+    </Select>
+    </div>, document.getElementById('root'));

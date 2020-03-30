@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./index.css"
-
-const content = "<h1>sdasd</h1><p>wedasd3</p>";
+import "./index.css";
+import FuncDefault from "./FuncDefault"
+import ClassDefault from "./ClassDefault"
+import ValidationComp from "./ValidationComp"
 const div = (
-    <div dangerouslySetInnerHTML={{
-        __html:content
-    }}>
-    
-      
+    <div>
+        <FuncDefault a = {10}></FuncDefault>
+        <ClassDefault b = {20}></ClassDefault>
+        <ValidationComp a={1}></ValidationComp>
     </div>
-    
 );
-// // 相当于
-// const divs = React.createElement("div",{},`${a}*${b}=${a*b}`)
 ReactDOM.render(div, document.getElementById('root'));

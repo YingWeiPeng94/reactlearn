@@ -13,3 +13,4 @@ datas = [
 ```
 2，name:每一个多选框的那么属性值
 3,chosseDatas:数组，表示当前选中的value值
+4，onchange:当选中项发生改变时的事件

@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css";
-import FuncDefault from "./FuncDefault"
-import ClassDefault from "./ClassDefault"
-import ValidationComp from "./ValidationComp"
+import App from './App'
 const div = (
     <div>
-        <FuncDefault a = {10}></FuncDefault>
-        <ClassDefault b = {20}></ClassDefault>
-        <ValidationComp a={1}></ValidationComp>
+       <App></App>
     </div>
 );
 ReactDOM.render(div, document.getElementById('root'));

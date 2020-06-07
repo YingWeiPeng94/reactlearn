@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css";
-import App from './App'
+import App3 from './App3'
+import App4 from './App4'
 const div = (
     <div>
-       <App></App>
+       {/* <App3></App3> */}
+       <App4></App4>
     </div>
 );
+const div2 = <div className="assaf">
+    <h1>
+       标题
+       {["abc", null, <p>段落</p>]} 
+    </h1>
+    <p>
+        {undefined}
+    </p>
+</div>
 ReactDOM.render(div, document.getElementById('root'));
+console.log(div2)
